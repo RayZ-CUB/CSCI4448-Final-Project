@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import database.Adduser;
+import src.database.Adduser;
 
 /**
  * register interface
@@ -26,7 +26,7 @@ import database.Adduser;
  * @author CK & R
  *
  */
-public class Register {
+public class Register{
 
     /*
      * 7labels, 5 text box, a button and 7 pages
@@ -38,7 +38,7 @@ public class Register {
     private JLabel jLabel4 = new JLabel("Name: ");
     private JLabel jLabel5 = new JLabel("Password: ");
     private JLabel jLabel6 = new JLabel("Confirm Password: ");
-    private JLabel jLabel7 = new JLabel("                                       length of password: 6~16 units, should not input space ");
+    private JLabel jLabel7 = new JLabel("slength of password: 6~16 units, should not input space ");
 
     private String user;
     private String studentid;
@@ -62,7 +62,7 @@ public class Register {
     private JButton button = new JButton("register");
     private JButton button2 = new JButton("return");
     // size
-    private Dimension dimension = new Dimension(350, 40);
+    private Dimension dimension = new Dimension(1000, 40);
     // panel
     private JPanel jPanel = new JPanel();
     private JPanel jPanel2 = new JPanel();
@@ -77,14 +77,14 @@ public class Register {
 
     public Register() {
         // window size
-        frame.setSize(450, 600);
+        frame.setSize(450, 1000);
         // empty
         frame.setLayout(null);
         // in middle
         frame.setLocationRelativeTo(null);
         // change the picture of the window
         Toolkit t = Toolkit.getDefaultToolkit();
-        Image image = t.getImage("img\\top.jpg");
+        Image image = t.getImage(/*"img\\background.jpg"*/"");
         frame.setIconImage(image);
 
         addassembly();
@@ -93,9 +93,9 @@ public class Register {
 
         addEvent();
         // background picture
-        Icon i = new ImageIcon("img\\register.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
-        Label.setBounds(0, 0, 450, 600);
+        Label.setBounds(0, 0, 600, 1000);
         frame.add(Label);
         // cannot change the size
         frame.setResizable(false);
@@ -131,7 +131,7 @@ public class Register {
         // button size
         button.setPreferredSize(dimension);
         button2.setFont(font5);
-        button2.setBounds(2, 2, 70, 30);
+        button2.setBounds(2, 2, 100, 30);
         button2.setBackground(Color.cyan);
         button2.setOpaque(false);
         // add board
@@ -152,12 +152,12 @@ public class Register {
         jPanel.setLayout(null);
         // location of the board
         jPanel.setBounds(0, 0, 450, 110);
-        jPanel2.setBounds(0, 110, 450, 50);
-        jPanel3.setBounds(0, 180, 450, 50);
-        jPanel4.setBounds(0, 250, 450, 50);
-        jPanel5.setBounds(0, 320, 450, 70);
-        jPanel6.setBounds(0, 390, 450, 50);
-        jPanel7.setBounds(0, 460, 450, 60);
+        jPanel2.setBounds(0, 150, 450, 80);
+        jPanel3.setBounds(0, 250, 450, 80);
+        jPanel4.setBounds(0, 350, 450, 80);
+        jPanel5.setBounds(0, 450, 450, 80);
+        jPanel6.setBounds(0, 550, 450, 80);
+        jPanel7.setBounds(0, 650, 450, 80);
         // add into the window
         frame.add(jPanel);
         frame.add(jPanel2);

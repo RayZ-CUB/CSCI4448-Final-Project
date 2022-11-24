@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -19,9 +19,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import database.BorrowRecords;
-import database.ConnectDatabase;
-import database.FindBook;
+import src.database.BorrowRecords;
+import src.database.ConnectDatabase;
+import src.database.FindBook;
 
 /**
  * Book borrowing and returning interface
@@ -74,7 +74,7 @@ public class BorrowingReturning {
 
     public BorrowingReturning() {
         // change background picture
-        Icon i = new ImageIcon("img\\returning.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 1200, 800);
 

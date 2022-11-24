@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -12,12 +12,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import database.Landing;
+import src.database.Landing;
 
 /**
  * login interface
@@ -76,7 +75,7 @@ public class Land {
 
         // Change the window icon
         Toolkit t = Toolkit.getDefaultToolkit();
-        Image image = t.getImage("img\\top.jpg");
+        Image image = t.getImage(/*"img\\background.jpg"*/"");
         frame.setIconImage(image);
 
         // add component
@@ -89,7 +88,7 @@ public class Land {
         addEvent();
 
         // change background picture
-        Icon i = new ImageIcon("img\\land1.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 550, 500);
         frame.add(Label);

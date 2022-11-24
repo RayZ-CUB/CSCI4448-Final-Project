@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -16,8 +16,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import database.FindBorrow;
-import database.UpdateAdmin;
+import src.database.UpdateAdmin;
 
 /**
  *Edit Permission Interface
@@ -47,7 +46,7 @@ public class Permissions extends JFrame {
         setSize(400, 450);
         setTitle("Edit Permission");
         // change the background
-        Icon i = new ImageIcon("img\\ah.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 400, 100);
 

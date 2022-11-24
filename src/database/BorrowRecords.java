@@ -1,14 +1,10 @@
-package database;
+package src.database;
 
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Arrays;
-import java.util.Vector;
-
-import javax.swing.JOptionPane;
 
 
 public class BorrowRecords {
@@ -27,7 +23,7 @@ public class BorrowRecords {
             preSql.setString(1, user);
             preSql.setInt(2, bookid);
             preSql.setString(3, bookname);
-            preSql.setString(4, "δ��");
+            preSql.setString(4, "not return yet");
             int ok = preSql.executeUpdate();
             con.close();
             ChangeBorrowState(bookid);
@@ -44,7 +40,7 @@ public class BorrowRecords {
 
         try {
             preSql = con.prepareStatement(sqlStr);
-            preSql.setString(1, "���");
+            preSql.setString(1, "Borrowed");
             preSql.setInt(2, bookid);
 
             int ok = preSql.executeUpdate();
@@ -72,15 +68,15 @@ public class BorrowRecords {
             preSql.setDate(1, date);
             preSql.setInt(2, bookid);
             preSql.setString(3, user);
-            preSql.setString(4, "δ��");
+            preSql.setString(4, "not return yet");
             int ok = preSql.executeUpdate();
 
             sqlStr = "update borrowrecords set status = ? where bookid = ? and user = ? and status = ?";
             preSql = con.prepareStatement(sqlStr);
-            preSql.setString(1, "�ѻ�");
+            preSql.setString(1, "already return");
             preSql.setInt(2, bookid);
             preSql.setString(3, user);
-            preSql.setString(4, "δ��");
+            preSql.setString(4, "not return yet");
             ok = preSql.executeUpdate();
 
             con.close();
@@ -98,7 +94,7 @@ public class BorrowRecords {
 
         try {
             preSql = con.prepareStatement(sqlStr);
-            preSql.setString(1, "�ڹ�");
+            preSql.setString(1, "In store");
             preSql.setInt(2, bookid);
 
             int ok = preSql.executeUpdate();
@@ -115,7 +111,7 @@ public class BorrowRecords {
         try {
             preSql = con.prepareStatement(sqlStr);
             preSql.setInt(1, bookid);
-            preSql.setString(2, "δ��");
+            preSql.setString(2, "not return yet");
             rs = preSql.executeQuery();
             while (rs.next()) {
                 String user2 = rs.getString(2);

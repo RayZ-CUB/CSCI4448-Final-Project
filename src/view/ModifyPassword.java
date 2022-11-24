@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 
-import database.ConnectDatabase;
+import src.database.ConnectDatabase;
 
 /**
  * change password interface
@@ -51,7 +51,7 @@ public class ModifyPassword extends JFrame {
     public ModifyPassword(String user) {
         setSize(600, 450);
         // change the background picture
-        Icon i = new ImageIcon("img\\ah.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 600, 150);
 
@@ -151,7 +151,7 @@ public class ModifyPassword extends JFrame {
                         empty();
                     }else {
                         if (newpass.equals(surepass)) {
-                            database.ModifyPassword.modifypass(user, newpass);
+                            src.database.ModifyPassword.modifypass(user, newpass);
                             JOptionPane.showMessageDialog(null, "Successfully");
 
                             JOptionPane.showMessageDialog(null, "Re-Login please");

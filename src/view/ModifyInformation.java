@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import database.ConnectDatabase;
+import src.database.ConnectDatabase;
 
 /**
  * Modify information interface
@@ -49,7 +49,7 @@ public class ModifyInformation extends JFrame{
     public ModifyInformation(String user) {
         setSize(600, 450);
         // change the background picture
-        Icon i = new ImageIcon("img\\ah.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 600, 150);
 

@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-import database.ConnectDatabase;
+import src.database.ConnectDatabase;
 /**
  *Account information interface
  *
@@ -41,7 +41,7 @@ public class AdminAccount extends JFrame {
 
     public AdminAccount() {
         // change background picture
-        Icon i = new ImageIcon("img\\tabletop.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 800, 100);
         setLayout(null);

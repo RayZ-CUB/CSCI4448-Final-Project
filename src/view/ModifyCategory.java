@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import database.Category;
+import src.database.Category;
 
 public class ModifyCategory extends JFrame{
 
@@ -36,7 +36,7 @@ public class ModifyCategory extends JFrame{
         setSize(400, 450);
         setTitle("Edit the category of the book");
         // change the background picture
-        Icon i = new ImageIcon("img\\ah.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 400, 100);
 

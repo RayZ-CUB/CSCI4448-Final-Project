@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 
 import java.awt.Color;
@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-import database.FindBook;
+import src.database.FindBook;
 /**
  * Book query interface
  *
@@ -64,7 +64,7 @@ public class BookSearch {
 
     public BookSearch() {
         // change background picture
-        Icon i = new ImageIcon("img\\booksearch.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 1200, 800);
         // label

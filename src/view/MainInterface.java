@@ -1,4 +1,4 @@
-package view;
+package src.view;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
@@ -17,7 +17,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
-import database.Landing;
+import src.database.Landing;
 
 
 public class MainInterface extends JFrame{
@@ -40,11 +40,11 @@ public class MainInterface extends JFrame{
 
         // Change window icon
         Toolkit t = Toolkit.getDefaultToolkit();
-        Image image = t.getImage("img\\top.jpg");
+        Image image = t.getImage(/*"img\\background.jpg"*/"");
         setIconImage(image);
 
         // Change background picture
-        Icon i = new ImageIcon("img\\Main.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 1200, 800);
         jPanel.setLayout(null);

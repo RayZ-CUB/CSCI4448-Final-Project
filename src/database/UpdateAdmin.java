@@ -1,11 +1,9 @@
-package database;
+package src.database;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import javax.swing.JOptionPane;
 
 public class UpdateAdmin {
     //Judge whether the user exists

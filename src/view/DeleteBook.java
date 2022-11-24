@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -14,8 +14,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import database.Book;
-import database.FindBook;
+import src.database.Book;
+import src.database.FindBook;
 
 public class DeleteBook extends JFrame {
     // panel
@@ -39,7 +39,7 @@ public class DeleteBook extends JFrame {
         setSize(400, 450);
         setTitle("Delete book");
         // change background picture
-        Icon i = new ImageIcon("img\\ah.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 400, 100);
 

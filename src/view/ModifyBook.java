@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -18,8 +18,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import database.Book;
-import database.FindBook;
+import src.database.Book;
+import src.database.FindBook;
 
 public class ModifyBook extends JFrame{
     // Panel
@@ -55,7 +55,7 @@ public class ModifyBook extends JFrame{
 
     public ModifyBook() {
         // change the background picture
-        Icon i = new ImageIcon("img\\admintop.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 580, 100);
         setLayout(null);

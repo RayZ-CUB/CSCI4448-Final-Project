@@ -1,4 +1,4 @@
-package view;
+package src.view;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -42,7 +42,7 @@ public class BookAdmin {
 
     public BookAdmin() {
         // change background picture
-        Icon i = new ImageIcon("img\\bookadmin.jpg");
+        Icon i = new ImageIcon(/*"img\\background.jpg"*/"");
         JLabel Label = new JLabel(i);
         Label.setBounds(0, 0, 1200, 800);
         // empty
