@@ -43,7 +43,6 @@ public class Landing {
         }
     }
 
-    //ȷ���Ƿ�Ϊ����Ա
     public static boolean sureadmin(String user) {
         Connection con = ConnectDatabase.connectDB();
         PreparedStatement preSql;

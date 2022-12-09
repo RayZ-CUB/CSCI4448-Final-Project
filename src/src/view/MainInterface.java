@@ -30,10 +30,10 @@ public class MainInterface extends JFrame{
     // Main Interface
     private JPanel jPanel = new JPanel();
     // Label
-    private JLabel jLabel = new JLabel("��ӭ��½ͼ�����ϵͳ");
+    private JLabel jLabel = new JLabel("Welcome");
     // font
-    private Font font = new Font("����", Font.BOLD, 70);
-    private Font font2 = new Font("����", Font.BOLD, 20);
+    private Font font = new Font("Dialog", Font.BOLD, 70);
+    private Font font2 = new Font("Dialog", Font.BOLD, 20);
 
     private Container con = getContentPane();
     public MainInterface(String user) {

@@ -38,7 +38,7 @@ public class Register{
     private JLabel jLabel4 = new JLabel("Name: ");
     private JLabel jLabel5 = new JLabel("Password: ");
     private JLabel jLabel6 = new JLabel("Confirm Password: ");
-    private JLabel jLabel7 = new JLabel("slength of password: 6~16 units, should not input space ");
+    private JLabel jLabel7 = new JLabel("length of password: 6~16 units, should not input space ");
 
     private String user;
     private String studentid;
